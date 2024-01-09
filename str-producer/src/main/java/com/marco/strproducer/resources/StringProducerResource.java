@@ -20,5 +20,6 @@ public class StringProducerResource {
     public ResponseEntity<?> sendMessage(@RequestBody String message) {
     producerService.sendMessage(message);
     return ResponseEntity.status(HttpStatus.CREATED).build();
+
     }
 }
