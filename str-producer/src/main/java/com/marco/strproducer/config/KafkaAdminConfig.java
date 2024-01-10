@@ -26,6 +26,6 @@ public final KafkaProperties properties;
 
     @Bean
     public KafkaAdmin.NewTopics topics(){
-    return new KafkaAdmin.NewTopics(TopicBuilder.name("str-topic").partitions(2).replicas(1).build());
+    return new KafkaAdmin.NewTopics(TopicBuilder.name("str-topic").partitions(2).replicas(1).build() );
     }
 }
